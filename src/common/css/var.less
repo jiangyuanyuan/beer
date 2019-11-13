@@ -1,0 +1,79 @@
+/**
+ * 全局变量
+ * 命名规范 —— 遵守语义化命名：lg-大号、md-中号、base-基本号、sm-小号、mini-超小号
+ */
+
+
+@xs: 451px; // 非bootstrap4值
+@sm: 576px;
+//@sm: 768px;
+@md: 768px;
+@lg: 992px;
+@xl: 1200px;
+@xl_1460: 1460px;
+@xxl: 1920px;
+
+.htmlFontSize{
+
+}
+.flex(){
+  display: flex;
+}
+.flexVertical(){
+  flex-direction: column;
+  .flex();
+}
+.flexCenter(){
+  justify-content: center;
+  align-items: center;
+  .flex();
+}
+.flexRest(){
+  flex: 1 1 0;
+}
+.flexVerticalCenter(){
+  .flexVertical();
+  .flexCenter();
+}
+
+.centerContent(){
+  width: 100%;
+}
+
+@media (min-width: 1201px) {
+  .centerContent(){
+    width: 1200px;
+    margin: auto;
+  }
+  .content-1200{
+    .centerContent()
+  }
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .htmlFontSize(){
+    font-size: 24px;
+  }
+  html{
+    .htmlFontSize();
+  }
+}
+
+@media (max-width: 768px) {
+  .htmlFontSize(){
+    font-size: 22px;
+  }
+  html{
+    .htmlFontSize();
+  }
+}
+@media (max-width: 576px) {
+  .htmlFontSize(){
+    font-size: 20px;
+  }
+  html{
+    .htmlFontSize();
+  }
+}
+
