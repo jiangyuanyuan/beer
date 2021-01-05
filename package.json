@@ -9,7 +9,7 @@
     "deploy-to-test-env": "./my-auto-deploy.sh  build  prod ||  start  my-auto-deploy.sh  build  prod ; ( echo '上传命令已经完成' ) "
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "luxon": "^1.19.3",
     "vue": "^2.6.10",
